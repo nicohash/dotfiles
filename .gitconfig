@@ -1,7 +1,1 @@
-[user]
-	name = nicohash
-	email = 58517269+nicohash@users.noreply.github.com
-[credential]
-	helper = cache
-[init]
-	defaultBranch = main
+.gitconfig
