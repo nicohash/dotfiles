@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = 58517269+nicohash@users.noreply.github.com
+	name = nicohash
+[credential]
+	helper = cache
