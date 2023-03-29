@@ -1,0 +1,9 @@
+# window management
+cask "spectacle"
+
+# shell tools
+cask "iterm2"
+brew "zsh"
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
+brew "romkatv/powerlevel10k/powerlevel10k"
