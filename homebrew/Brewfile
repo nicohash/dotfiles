@@ -1,5 +1,7 @@
 # general setup
+tap "homebrew/cask"
 tap "homebrew/bundle"
+tap "buo/cask-upgrade"
 tap "romkatv/powerlevel10k"
 
 # shell tools
