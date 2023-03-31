@@ -1,3 +1,7 @@
+# general setup
+tap "homebrew/bundle"
+tap "romkatv/powerlevel10k"
+
 # window management
 cask "spectacle"
 
