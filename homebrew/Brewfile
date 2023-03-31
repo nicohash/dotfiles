@@ -7,3 +7,11 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 brew "romkatv/powerlevel10k/powerlevel10k"
+
+# core apps
+cask "alfred"
+cask "coconutbattery"
+cask "google-chrome"
+cask "ticktick"
+cask "spotify"
+cask "surfshark"
