@@ -2,9 +2,6 @@
 tap "homebrew/bundle"
 tap "romkatv/powerlevel10k"
 
-# window management
-cask "spectacle"
-
 # shell tools
 cask "iterm2"
 brew "mas"
@@ -13,15 +10,26 @@ brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 brew "romkatv/powerlevel10k/powerlevel10k"
 
-# core apps
+# core tools
 cask "alfred"
 cask "coconutbattery"
+cask "stats"
+cask "spectacle"
+
+# apps
 cask "google-chrome"
 cask "ticktick"
 cask "spotify"
 cask "surfshark"
 
 # mas apps
-mas "Hidden Bar", id:1452453066
+mas "Calendars", id: 608834326
+mas "GoodNotes", id: 1444383602
+mas "Hidden Bar", id: 1452453066
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
-mas "Calendars – Planner & Kalender", id: 608834326
+mas "Surfshark", id: 1437809329
+mas "TickTick", id: 966085870
+mas "WhatsApp", id: 1147396723
