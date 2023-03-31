@@ -16,7 +16,7 @@ source ~/.bashrc
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 sudo rm -rf ~/.p10k.zsh > /dev/null 2>&1
-sudo rm -rf ~/.Brewfile > /dev/null 2>&1
+sudo rm -rf ~/Brewfile > /dev/null 2>&1
 
 #==============
 # Create symlinks in the home folder
@@ -28,8 +28,8 @@ ln -s ~/dotfiles/gitconfig ~/.gitconfig
 SYMLINKS+=('.gitconfig')
 ln -s ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh
 SYMLINKS+=('.p10k.zsh')
-ln -sf ~/dotfiles/homebrew/Brewfile ~/.Brewfile
-SYMLINKS+=('.Brewfile')
+ln -sf ~/dotfiles/homebrew/Brewfile ~/Brewfile
+SYMLINKS+=('Brewfile')
 
 echo ${SYMLINKS[@]}
 
