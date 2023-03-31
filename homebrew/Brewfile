@@ -7,6 +7,7 @@ cask "spectacle"
 
 # shell tools
 cask "iterm2"
+brew "mas"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
@@ -19,3 +20,8 @@ cask "google-chrome"
 cask "ticktick"
 cask "spotify"
 cask "surfshark"
+
+# mas apps
+mas "Hidden Bar", id:1452453066
+mas "OneDrive", id: 823766827
+mas "Calendars – Planner & Kalender", id: 608834326
