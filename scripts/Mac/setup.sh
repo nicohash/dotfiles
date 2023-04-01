@@ -1,4 +1,10 @@
 #==============
+# Install developer tools
+#==============
+
+xcode-select --install
+
+#==============
 # Install all the packages
 #==============
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -40,6 +46,25 @@ cd -
 # Set zsh as the default shell
 #==============
 chsh -s /bin/zsh
+
+#==============
+# Configure Dock
+#==============
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0.2; defaults write com.apple.dock autohide-time-modifier -int 0.2
+
+# add dock spacers
+read -p "Dock spacers [3]: " spacers
+spacers=${spacers:-3}
+
+for spacer in spacers
+do
+	defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
+done
+# restarting Dock
+killall Dock
+
+echo "Dock configured"
 
 #==============
 # And we are done
