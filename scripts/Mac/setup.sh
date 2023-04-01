@@ -7,7 +7,8 @@ xcode-select --install
 #==============
 # Install all the packages
 #==============
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
 brew update
 
@@ -19,6 +20,7 @@ source ~/.bashrc
 # Remove old dot flies
 #==============
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
+sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 sudo rm -rf ~/.p10k.zsh > /dev/null 2>&1
 sudo rm -rf ~/Brewfile > /dev/null 2>&1
@@ -29,6 +31,8 @@ sudo rm -rf ~/Brewfile > /dev/null 2>&1
 SYMLINKS=()
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 SYMLINKS+=('.zshrc')
+ln -sf ~/dotfiles/vimrc ~/.vimrc
+SYMLINKS+=('.vimrc')
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 SYMLINKS+=('.gitconfig')
 ln -s ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh
