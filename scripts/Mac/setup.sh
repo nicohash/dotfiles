@@ -19,9 +19,10 @@ source ~/.bashrc
 #==============
 # Remove old dot flies
 #==============
-sudo rm -rf ~/.zshrc > /dev/null 2>&1
+sudo rm -rf ~/.vim > /dev/null 2>&1
 sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
+sudo rm -rf ~/.zshrc > /dev/null 2>&1
 sudo rm -rf ~/.p10k.zsh > /dev/null 2>&1
 sudo rm -rf ~/Brewfile > /dev/null 2>&1
 
@@ -29,12 +30,14 @@ sudo rm -rf ~/Brewfile > /dev/null 2>&1
 # Create symlinks in the home folder
 #==============
 SYMLINKS=()
-ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
-SYMLINKS+=('.zshrc')
+ln -sf ~/dotfiles/vim ~/.vim
+SYMLINKS+=('.vim')
 ln -sf ~/dotfiles/vimrc ~/.vimrc
 SYMLINKS+=('.vimrc')
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 SYMLINKS+=('.gitconfig')
+ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
+SYMLINKS+=('.zshrc')
 ln -s ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh
 SYMLINKS+=('.p10k.zsh')
 ln -sf ~/dotfiles/homebrew/Brewfile ~/Brewfile
@@ -58,11 +61,12 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0.2; defaults write com.apple.dock autohide-time-modifier -int 0.2
 
 # add dock spacers
-read -p "Dock spacers [3]: " spacers
+read -p "Dock spacers (default 3): " spacers
 spacers=${spacers:-3}
 
 for spacer in spacers
 do
+    echo spacer
 	defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
 done
 # restarting Dock
