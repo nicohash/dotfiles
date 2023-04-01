@@ -7,8 +7,7 @@ xcode-select --install
 #==============
 # Install all the packages
 #==============
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
 brew update
 
@@ -50,11 +49,6 @@ brew bundle
 cd -
 
 #==============
-# Set zsh as the default shell
-#==============
-chsh -s /bin/zsh
-
-#==============
 # Configure Dock
 #==============
 defaults write com.apple.dock autohide -bool true
@@ -64,7 +58,7 @@ defaults write com.apple.dock autohide-delay -float 0.2; defaults write com.appl
 read -p "Dock spacers (default 3): " spacers
 spacers=${spacers:-3}
 
-for spacer in spacers
+for spacer in $spacers
 do
     echo spacer
 	defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
@@ -73,6 +67,11 @@ done
 killall Dock
 
 echo "Dock configured"
+
+#==============
+# Set zsh as the default shell
+#==============
+chsh -s /bin/zsh
 
 #==============
 # And we are done
