@@ -5,8 +5,8 @@ My dot files for unix machines.
 
 ### Mac
 
-Run
-```zsh bash installation-scripts/Mac/setup.sh
+Run ```zsh
+bash installation-scripts/Mac/setup.sh
 ```
 
 ### Linux
