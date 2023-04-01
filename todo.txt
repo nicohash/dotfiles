@@ -1,3 +1,5 @@
 TODO's
 
+adjust dock animation and timing
+fix dock spacers
 fix brew installations and permissions
