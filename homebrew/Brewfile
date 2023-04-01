@@ -11,6 +11,7 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 brew "romkatv/powerlevel10k/powerlevel10k"
+brew "neofetch"
 
 # core tools
 cask "alfred"
