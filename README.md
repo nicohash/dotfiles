@@ -1,16 +1,22 @@
-# Dot Files
-My dot files for unix machines.
+# Dotfiles
+My dotfiles for unix machines.
 
 ## Installation
+
+```zsh
+git clone https://github.com/nicohash/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+```
 
 ### Mac
 
 ```zsh
-bash installation-scripts/Mac/setup.sh
+bash scripts/Mac/setup.sh
 ```
 
 ### Linux
 
-Run
 ```zsh
+bash scripts/Linux/install-packages.sh
+bash scripts/Linux/create-symlinks.sh
 ```
