@@ -1,5 +1,4 @@
 TODO's
 
-adjust dock animation and timing
-fix dock spacers
-fix brew installations and permissions
+remove all apps from dock
+add custom apps to dock automatically if possible
