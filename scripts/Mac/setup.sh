@@ -51,22 +51,43 @@ cd -
 #==============
 # Configure Dock
 #==============
+echo "$(tput bold)Configuring Dock$(tput sgr0)"
+
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0.2; defaults write com.apple.dock autohide-time-modifier -int 0.2
+echo "Autohide active"
+defaults write com.apple.dock autohide-delay -float 0.2
+echo "Autohide delay: 0.2 seconds"
+defaults write com.apple.dock autohide-time-modifier -float 0.2
+echo "Autohide time modifier: 0.2 seconds"
+defaults write com.apple.dock mineffect -string "scale"
+echo "Minimize effect: scale"
+defaults write com.apple.dock show-recents -bool false
+echo "Recent applications hidden"
 
-# add dock spacers
-read -p "Dock spacers (default 3): " spacers
-spacers=${spacers:-3}
+read -p "Dock spacers (press $(tput bold)ENTER$(tput sgr0) to skip): " spacers
+spacers=${spacers:-0}
 
-for spacer in $spacers
-do
-    echo spacer
-	defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
-done
+if [[ $spacers =~ ^[0-9]+$ ]]; then
+        addedSpacers=0
+
+        while [[ $spacers > 0 ]]
+        do
+                defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
+                ((spacers--))
+                ((addedSpacers++))        
+        done
+
+        echo "Spacers added: $addedSpacers"
+else
+        echo "Input not allowed"
+        echo "Add small spacers manually: defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}' && killall Dock"
+fi
+
+
 # restarting Dock
 killall Dock
 
-echo "Dock configured"
+echo "$(tput bold)Dock configured$(tput sgr0)"
 
 #==============
 # Set zsh as the default shell
@@ -76,6 +97,6 @@ chsh -s /bin/zsh
 #==============
 # And we are done
 #==============
-echo -e "\n====== All Done!! ======\n"
+echo -e "\n$(tput bold)====== All Done! ======$(tput sgr0)\n"
 echo
 echo "Enjoy"
