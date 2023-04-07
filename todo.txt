@@ -1,4 +1,5 @@
 TODO's
 
-remove all apps from dock
-add custom apps to dock automatically if possible
+include option to run dock script from setup.sh
+add touch bar config
+add status bar config
