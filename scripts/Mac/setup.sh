@@ -34,7 +34,7 @@ sudo rm -rf ~/Brewfile > /dev/null 2>&1
 SYMLINKS=()
 ln -sf ~/dotfiles/vim ~/.vim
 SYMLINKS+=('.vim')
-ln -sf ~/dotfiles/vimrc ~/.vimrc
+ln -sf ~/dotfiles/vim/vimrc ~/.vimrc
 SYMLINKS+=('.vimrc')
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 SYMLINKS+=('.gitconfig')
