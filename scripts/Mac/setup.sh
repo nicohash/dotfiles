@@ -85,5 +85,4 @@ done
 # And we are done
 #==============
 echo -e "\n$(tput bold)====== All Done! ======$(tput sgr0)\n"
-echo
 echo "Enjoy"
