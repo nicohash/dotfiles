@@ -1,37 +1,29 @@
-# general setup
-tap "homebrew/cask"
-tap "homebrew/bundle"
 tap "buo/cask-upgrade"
+tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "romkatv/powerlevel10k"
-
-# shell tools
-cask "iterm2"
 brew "mas"
-brew "zsh"
-brew "zsh-syntax-highlighting"
-brew "zsh-autosuggestions"
-brew "romkatv/powerlevel10k/powerlevel10k"
 brew "neofetch"
-
-# core tools
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "romkatv/powerlevel10k/powerlevel10k"
 cask "alfred"
+cask "appcleaner"
 cask "coconutbattery"
+cask "fork"
+cask "hiddenbar"
+cask "iterm2"
+cask "microsoft-auto-update"
+cask "microsoft-excel"
+cask "microsoft-powerpoint"
+cask "microsoft-word"
+cask "onedrive"
+cask "rectangle"
 cask "stats"
-cask "spectacle"
-
-# apps
-cask "google-chrome"
-cask "ticktick"
-cask "spotify"
 cask "surfshark"
-
-# mas apps
+cask "ticktick"
+cask "whatsapp"
 mas "Calendars", id: 608834326
 mas "GoodNotes", id: 1444383602
-mas "Hidden Bar", id: 1452453066
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
-mas "OneDrive", id: 823766827
-mas "TickTick", id: 966085870
-mas "WhatsApp", id: 1147396723
+mas "iLightShow", id: 1217138942
