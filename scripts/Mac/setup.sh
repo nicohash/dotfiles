@@ -56,6 +56,31 @@ cd -
 #==============
 chsh -s /bin/zsh
 
+
+#==============
+# Ask to configure Dock 
+#==============
+while true; do
+    read -p "Do you wish to configure the Dock? (y/n) " yn
+    case $yn in
+        [Yy]* ) source "$HOME/dotfiles/scripts/Mac/dock/configure-dock.sh"; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+#==============
+# Ask to configure Touchbar 
+#==============
+while true; do
+    read -p "Do you wish to configure the Touchbar? (y/n) " yn
+    case $yn in
+        [Yy]* ) source "$HOME/dotfiles/scripts/Mac/touchbar/configure-touchbar.sh"; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
 #==============
 # And we are done
 #==============
