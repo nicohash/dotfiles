@@ -4,3 +4,4 @@ add #!/bin/bash to bash files
 fix oh-my-zsh issues -> switch to different option or include oh-my-zsh in setup somehow
 if oh-my-zsh is kept find way to disable .zcompdumps
 add homebrew path to zshrc
+make todo file md and integrate into readme
