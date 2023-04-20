@@ -2,3 +2,4 @@ TODO's
 
 fix oh-my-zsh issues -> switch to different option or include oh-my-zsh in setup somehow
 if oh-my-zsh is kept find way to disable .zcompdumps
+add .zprofile (config from brew)
