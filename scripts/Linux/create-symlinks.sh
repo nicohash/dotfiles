@@ -15,6 +15,8 @@ log_file=~/install_progress_log.txt
 #==============
 # Delete existing dot files and folders
 #==============
+sudo rm -rf ~/.vim> /dev/null 2>&1
+sudo rm -rf ~/.vimrc> /dev/null 2>&1
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
 sudo rm -rf ~/.p10k.zsh > /dev/null 2>&1
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
@@ -24,6 +26,8 @@ sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 # Create symlinks in the home folder
 # Allow overriding with files of matching names in the custom-configs dir
 #==============
+ln -s $dotfiles_dir/vim ~/.vim
+ln -s $dotfiles_dir/vim/vimrc ~/.vimrc
 ln -sf $dotfiles_dir/zsh/zshrc ~/.zshrc
 ln -sf $dotfiles_dir/zsh/p10k.zsh ~/.p10k.zsh
 # maybe -sf (force) is better instead of -s
@@ -40,5 +44,5 @@ sudo chsh -s /bin/zsh
 echo -e "\n====== Summary ======\n"
 cat $log_file
 echo
-echo "Enjoy -Jarrod"
+echo "Enjoy"
 rm $log_file
