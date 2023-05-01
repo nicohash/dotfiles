@@ -1,7 +1,7 @@
 TODO's
 
 SWITCH TO TODO.md
-
+add minimize window to application true for dock
 add music and fork app to dock config
 fix log file in linux scripts
 add hint that you might have to run :PlugInstall in vim to get all plugins
