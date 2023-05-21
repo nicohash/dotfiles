@@ -1,6 +1,8 @@
 # Dotfiles
 My dotfiles for unix machines.
 
+[View todo list](TODO.md) 
+
 ## Installation
 
 ```zsh
