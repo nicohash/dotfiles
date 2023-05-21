@@ -2,9 +2,7 @@
 
 - [ ] Add minimize window to application true for dock
 - [ ] Add music and fork app to dock config
-- [ ] Fix log file in linux scripts
 - [ ] Add hint that you might have to run :PlugInstall in vim to get all plugins
-- [ ] Update install-packages.sh
 - [ ] Add #!/bin/bash to bash files
 - [ ] Fix oh-my-zsh issues -> switch to different option or include oh-my-zsh in setup somehow
 - [ ] If oh-my-zsh is kept find way to disable .zcompdumps
@@ -19,3 +17,4 @@
 
 - [x] Switch to TODO.md
 - [x] Integrate todo file into into readme
+- [x] Fix log file in linux scripts
