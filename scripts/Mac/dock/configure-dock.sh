@@ -1,4 +1,4 @@
-source "$HOME/dotfiles/scripts/Mac/helpers/style.sh"
+source "$HOME/dotfiles/scripts/helpers/style.sh"
 source "$HOME/dotfiles/scripts/Mac/dock/dock-functions.sh"
 
 declare -a apps=(

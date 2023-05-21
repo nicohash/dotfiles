@@ -1,5 +1,5 @@
 # Import helpers
-source "$HOME/dotfiles/scripts/Mac/helpers/style.sh"
+source "$HOME/dotfiles/scripts/helpers/style.sh"
 
 #==============
 # Install developer tools
@@ -14,7 +14,6 @@ xcode-select --install
 brew doctor
 brew update
 
-# So we use all of the packages we are about to install
 echo "export PATH='/usr/local/bin:$PATH'\n" >> ~/.bashrc
 source ~/.bashrc
 
@@ -52,7 +51,7 @@ brew bundle
 cd -
 
 #==============
-# Set zsh as the default shell
+# Set zsh as the default shell (for pre MacOS Catalina when bash was default)
 #==============
 chsh -s /bin/zsh
 
@@ -84,5 +83,5 @@ done
 #==============
 # And we are done
 #==============
-echo -e "\n$(tput bold)====== All Done! ======$(tput sgr0)\n"
+echo -e "\n${bold}====== All Done! ======${normal}\n"
 echo "Enjoy"

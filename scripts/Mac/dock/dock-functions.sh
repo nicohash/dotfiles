@@ -1,4 +1,4 @@
-source "$HOME/dotfiles/scripts/Mac/helpers/style.sh"
+source "$HOME/dotfiles/scripts/helpers/style.sh"
 
 # adds an application to macOS Dock
 # usage: add_app_to_dock "Application Name"
