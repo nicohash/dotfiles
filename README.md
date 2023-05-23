@@ -19,6 +19,5 @@ bash scripts/Mac/setup.sh
 ### Linux
 
 ```zsh
-bash scripts/Linux/install-packages.sh
-bash scripts/Linux/create-symlinks.sh
+bash scripts/Linux/setup.sh
 ```
