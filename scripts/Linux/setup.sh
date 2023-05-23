@@ -37,10 +37,6 @@ else
     echo "$(bold "Vim") FAILED to install!" >> $log_file
 fi
 
-git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-# not sure if this is necessary:
-# echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-
 #==============
 # Delete existing dot files and folders
 #==============
