@@ -7,6 +7,9 @@ My dotfiles for unix machines.
 
 ```zsh
 git clone https://github.com/nicohash/dotfiles.git ~/dotfiles
+```
+
+```zsh
 cd ~/dotfiles
 ```
 
