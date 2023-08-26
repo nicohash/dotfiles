@@ -2,10 +2,14 @@ source "$HOME/dotfiles/scripts/helpers/style.sh"
 source "$HOME/dotfiles/scripts/Mac/dock/dock-functions.sh"
 
 declare -a apps=(
-    '/Applications/iTerm.app'
     '/System/Applications/System Settings.app'
+    '/Applications/iTerm.app'
+    '/Applications/Fork.app'
+    '/Applications/Visual Studio Code.app'
     '/Applications/Google Chrome.app'
+    '/Applications/Surfshark.app'
     '/System/Applications/Mail.app'
+    '/Applications/Microsoft Outlook.app'
     '/Applications/Calendars.app'
     '/Applications/TickTick.app'
     '/Applications/GoodNotes.app'
@@ -35,7 +39,7 @@ read -p "Small spacers (press ${bold}RETURN${normal}/${bold}ENTER${normal} to sk
 add_small_spacer_to_dock $small_spacer
 
 enable_autohide_for_dock
-set_autohide_timing_for_dock 0.2
+set_autohide_timing_for_dock 0.1
 set_mineffect_for_dock "scale"
 
 killall Dock
