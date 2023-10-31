@@ -34,6 +34,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Install plugins
 call plug#begin()
 Plug 'overcache/NeoSolarized'
+Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 " Set colorscheme
